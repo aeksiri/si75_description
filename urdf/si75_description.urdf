@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="si75_description">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-3.6516E-16 0.00019559 0.021596"
+        rpy="0 0 0" />
+      <mass
+        value="27.667" />
+      <inertia
+        ixx="3.6038"
+        ixy="4.9303E-17"
+        ixz="1.4747E-16"
+        iyy="0.029042"
+        iyz="0.0001152"
+        izz="3.6249" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.77647 0.75686 0.73725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link0">
+    <inertial>
+      <origin
+        xyz="-0.00063204 -0.0042993 -3.5585E-08"
+        rpy="0 0 0" />
+      <mass
+        value="4.311" />
+      <inertia
+        ixx="0.0092654"
+        ixy="-3.5443E-10"
+        ixz="-1.0068E-09"
+        iyy="0.01746"
+        iyz="-8.6196E-10"
+        izz="0.0092665" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link0.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link0.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint0"
+    type="prismatic">
+    <origin
+      xyz="0 0 0.075"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link0" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.5"
+      upper="0.5"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link1">
+    <inertial>
+      <origin
+        xyz="2.8737E-06 -0.0082861 -0.079664"
+        rpy="0 0 0" />
+      <mass
+        value="1.3224" />
+      <inertia
+        ixx="0.0017521"
+        ixy="3.6409E-07"
+        ixz="-4.9769E-09"
+        iyy="0.0019049"
+        iyz="-0.00033285"
+        izz="0.0017515" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint1"
+    type="revolute">
+    <origin
+      xyz="0 0.03 0"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link0" />
+    <child
+      link="link1" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link2">
+    <inertial>
+      <origin
+        xyz="-0.00010161 0.18977 -0.055942"
+        rpy="0 0 0" />
+      <mass
+        value="2.706" />
+      <inertia
+        ixx="0.019855"
+        ixy="8.7529E-06"
+        ixz="3.5066E-06"
+        iyy="0.00264"
+        iyz="-2.1133E-09"
+        izz="0.020892" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint2"
+    type="revolute">
+    <origin
+      xyz="0 -0.045 -0.1"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link1" />
+    <child
+      link="link2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.141"
+      upper="2.141"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link3">
+    <inertial>
+      <origin
+        xyz="1.6349E-06 0.03134 0.037212"
+        rpy="0 0 0" />
+      <mass
+        value="1.3962" />
+      <inertia
+        ixx="0.0016673"
+        ixy="-5.0939E-09"
+        ixz="2.2146E-06"
+        iyy="0.0018302"
+        iyz="-0.00033071"
+        izz="0.0018186" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint3"
+    type="revolute">
+    <origin
+      xyz="0 0.39975 0"
+      rpy="0 0 0" />
+    <parent
+      link="link2" />
+    <child
+      link="link3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.8"
+      upper="2.8"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link4">
+    <inertial>
+      <origin
+        xyz="0.0017803 0.077114 0.2421"
+        rpy="0 0 0" />
+      <mass
+        value="1.0512" />
+      <inertia
+        ixx="0.0035131"
+        ixy="-1.2592E-05"
+        ixz="-6.7395E-06"
+        iyy="0.0033249"
+        iyz="-0.00058909"
+        izz="0.00072825" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint4"
+    type="revolute">
+    <origin
+      xyz="0 0.098 0.045"
+      rpy="-1.5708 0.019661 0" />
+    <parent
+      link="link3" />
+    <child
+      link="link4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link5">
+    <inertial>
+      <origin
+        xyz="-1.4342E-05 0.0061566 0.030217"
+        rpy="0 0 0" />
+      <mass
+        value="1.022" />
+      <inertia
+        ixx="0.00067525"
+        ixy="-2.1361E-07"
+        ixz="4.8106E-06"
+        iyy="0.0005408"
+        iyz="-4.886E-05"
+        izz="0.00068868" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint5"
+    type="revolute">
+    <origin
+      xyz="0.00063045 0.032061 0.30175"
+      rpy="1.5708 0 -0.019661" />
+    <parent
+      link="link4" />
+    <child
+      link="link5" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link6">
+    <inertial>
+      <origin
+        xyz="-7.669E-18 1.7949E-18 0.0074166"
+        rpy="0 0 0" />
+      <mass
+        value="0.081461" />
+      <inertia
+        ixx="1.754E-05"
+        ixy="-1.0909E-21"
+        ixz="-2.6523E-22"
+        iyy="1.8583E-05"
+        iyz="-5.1886E-21"
+        izz="3.309E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint6"
+    type="revolute">
+    <origin
+      xyz="0 0.0705 0.03207"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link5" />
+    <child
+      link="link6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.141"
+      upper="3.141"
+      effort="80"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link_tool">
+    <inertial>
+      <origin
+        xyz="6.2564E-06 3.3394E-05 0.031908"
+        rpy="0 0 0" />
+      <mass
+        value="0.16269" />
+      <inertia
+        ixx="7.5997E-05"
+        ixy="-8.8251E-08"
+        ixz="1.2432E-08"
+        iyy="6.2828E-05"
+        iyz="-6.8306E-08"
+        izz="3.5318E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link_tool.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link_tool.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_tool"
+    type="fixed">
+    <origin
+      xyz="0 0 0.015"
+      rpy="0 0 0" />
+    <parent
+      link="link6" />
+    <child
+      link="link_tool" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="link_finger_left">
+    <inertial>
+      <origin
+        xyz="-2.381E-09 0.031222 -0.0051254"
+        rpy="0 0 0" />
+      <mass
+        value="0.032972" />
+      <inertia
+        ixx="7.4777E-06"
+        ixy="6.2336E-13"
+        ixz="5.822E-13"
+        iyy="1.321E-06"
+        iyz="-1.1623E-06"
+        izz="7.328E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link_finger_left.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link_finger_left.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_finger_left"
+    type="prismatic">
+    <origin
+      xyz="0 0.01069 0.0577"
+      rpy="1.5708 0 0" />
+    <parent
+      link="link_tool" />
+    <child
+      link="link_finger_left" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.01"
+      upper="0.0"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+  <link
+    name="link_finger_right">
+    <inertial>
+      <origin
+        xyz="2.381E-09 -0.031222 -0.0051254"
+        rpy="0 0 0" />
+      <mass
+        value="0.032972" />
+      <inertia
+        ixx="7.4777E-06"
+        ixy="6.2336E-13"
+        ixz="-5.822E-13"
+        iyy="1.321E-06"
+        iyz="1.1623E-06"
+        izz="7.328E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link_finger_right.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://si75_description/meshes/link_finger_right.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_finger_right"
+    type="prismatic">
+    <origin
+      xyz="0 -0.01069 0.0577"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="link_tool" />
+    <child
+      link="link_finger_right" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-0.01"
+      upper="0.0"
+      effort="10"
+      velocity="0.5" />
+  </joint>
+
+  <link name="eef_link"/>
+
+
+  <joint name="eef_joint" type="fixed">
+    <origin
+      xyz="0 0 0.115"
+      rpy="0 0 0" />
+    <parent link="link_tool"/>
+    <child link="eef_link"/>
+  </joint>
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace>/</robotNamespace>
+      <legacyModeNS> true </legacyModeNS>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="base_link">
+    <static>true</static>
+  </gazebo>
+
+  <transmission name="tran0">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint0">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor0">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>  
+
+  <transmission name="tran1">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor1">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>   
+
+  <transmission name="tran2">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor2">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>   
+
+  <transmission name="tran3">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor3">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission> 
+
+  <transmission name="tran4">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor4">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>   
+
+  <transmission name="tran5">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor5">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>   
+
+  <transmission name="tran6">
+    <type>transmission_interface/SimpleTransmission</type>
+    <joint name="joint6">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    </joint>
+    <actuator name="motor6">
+      <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+      <mechanicalReduction>1</mechanicalReduction>
+    </actuator>
+  </transmission>
+
+</robot>
